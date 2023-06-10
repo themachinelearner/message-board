@@ -16,7 +16,7 @@ let messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Message Board', messages });
+  res.render('index', { title: 'Message Board', messages, numMessages: process.env.TIMES });
 });
 
 router.get('/new', (req, res) => {

@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <h1>Messages</h1>
+    <h1>Messages <%= numMessages %></h1>
     <button onclick="location.href='/new';">Submit new message</button>
     <% messages.forEach(message => { %>
       <div style="margin-top: 40px; border: 2px solid grey;">
